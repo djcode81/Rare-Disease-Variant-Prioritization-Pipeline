@@ -1,0 +1,23 @@
+{
+  "sample_id": "TEST",
+  "total_prioritized_variants": 4747,
+  "high_priority_variants": 562,
+  "medium_priority_variants": 2565,
+  "low_priority_variants": 1620,
+  "top_genes": {
+    "OTHER1": 901,
+    "OTHER3": 850,
+    "OTHER2": 845,
+    "GENE2": 823,
+    "GENE1": 815,
+    "BRCA1": 79,
+    "MTOR": 77,
+    "CHEK2": 75,
+    "BRCA2": 72,
+    "CDKN2A": 71
+  },
+  "consequence_distribution": {
+    "missense_variant": 4613,
+    "frameshift_variant": 134
+  }
+}

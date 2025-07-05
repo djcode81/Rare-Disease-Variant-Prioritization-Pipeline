@@ -1,0 +1,12 @@
+{
+  "total_variants_analyzed": 0,
+  "inheritance_patterns": {
+    "autosomal_dominant_compatible": 0,
+    "autosomal_recessive_compatible": 0,
+    "x_linked_compatible": 0
+  },
+  "de_novo_variants": 0,
+  "compound_heterozygous_pairs": 0,
+  "affected_individuals": 0,
+  "genes_with_variants": 0
+}

@@ -1,8 +1,6 @@
-# NextFlow
+# NextFlow working directories and logs
 work/
 .nextflow*
-results/
-*.html
 *.log
 trace.txt
 timeline.html
@@ -21,19 +19,17 @@ venv/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Data files
-*.vcf
-*.vcf.gz
+# Large data files (but keep test data)
 *.bam
 *.bam.bai
-*.fastq
+*.cram
+*.crai
+*.fasta.gz
 *.fastq.gz
-*.fq
-*.fq.gz
-test_data/
-data/
+# Allow small test VCF files
+!test_data/*.vcf
 
-# OS
+# OS files
 .DS_Store
 .DS_Store?
 ._*
@@ -42,18 +38,12 @@ data/
 ehthumbs.db
 Thumbs.db
 
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
-
-# Logs
-*.log
-logs/
 
 # Temporary files
-tmp/
-temp/
-.tmp/
+*.tmp
+*.temp
