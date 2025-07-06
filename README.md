@@ -1,5 +1,4 @@
 # Rare Disease Variant Prioritization Pipeline
-NextFlow License: MIT
 
 A production-ready NextFlow pipeline for rare disease variant analysis with dual-parser capability, clinical reporting, and inheritance pattern detection.
 
