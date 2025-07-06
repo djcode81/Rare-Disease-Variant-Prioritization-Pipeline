@@ -1,0 +1,5 @@
+    "RARE_DISEASE_ENHANCED:CLINICAL_REPORT":
+        python: 3.9.23
+        pandas: 2.3.0+4.g1dfc98e16a
+        plotly: 6.2.0
+    END_VERSIONS

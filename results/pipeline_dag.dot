@@ -1,0 +1,111 @@
+digraph "pipeline_dag" {
+rankdir=TB;
+v0 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.of"];
+v3 [label="RARE_DISEASE_ENHANCED:RARE_DISEASE_PRIORITIZE"];
+v0 -> v3 [label="vcf_channel"];
+
+v1 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.empty"];
+v4 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v1 -> v4 [label="ch_versions"];
+
+v2 [shape=point,label="",fixedsize=true,width=0.1];
+v3 [label="RARE_DISEASE_ENHANCED:RARE_DISEASE_PRIORITIZE"];
+v2 -> v3 [label="config"];
+
+v3 [label="RARE_DISEASE_ENHANCED:RARE_DISEASE_PRIORITIZE"];
+v13 [label="RARE_DISEASE_ENHANCED:CLINICAL_REPORT"];
+v3 -> v13 [label="prioritized_variants"];
+
+v3 [label="RARE_DISEASE_ENHANCED:RARE_DISEASE_PRIORITIZE"];
+v13 [label="RARE_DISEASE_ENHANCED:CLINICAL_REPORT"];
+v3 -> v13 [label="summary_stats"];
+
+v3 [label="RARE_DISEASE_ENHANCED:RARE_DISEASE_PRIORITIZE"];
+v4 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v3 -> v4;
+
+v4 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v11 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v4 -> v11 [label="ch_versions"];
+
+v0 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.of"];
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v0 -> v7 [label="vcf_channel"];
+
+v5 [shape=point,label="",fixedsize=true,width=0.1];
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v5 -> v7 [label="pedigree"];
+
+v6 [shape=point,label="",fixedsize=true,width=0.1];
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v6 -> v7 [label="gene_panels"];
+
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v10 [shape=point];
+v7 -> v10 [label="inheritance_patterns"];
+
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v9 [shape=point];
+v7 -> v9 [label="compound_heterozygous"];
+
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v8 [shape=point];
+v7 -> v8 [label="de_novo_variants"];
+
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v21 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v7 -> v21 [label="inheritance_summary"];
+
+v7 [label="RARE_DISEASE_ENHANCED:INHERITANCE_ANALYSIS"];
+v11 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v7 -> v11;
+
+v11 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v15 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v11 -> v15 [label="ch_versions"];
+
+v12 [shape=point,label="",fixedsize=true,width=0.1];
+v13 [label="RARE_DISEASE_ENHANCED:CLINICAL_REPORT"];
+v12 -> v13 [label="pedigree"];
+
+v13 [label="RARE_DISEASE_ENHANCED:CLINICAL_REPORT"];
+v23 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v13 -> v23 [label="clinical_html_report"];
+
+v13 [label="RARE_DISEASE_ENHANCED:CLINICAL_REPORT"];
+v14 [shape=point];
+v13 -> v14 [label="clinical_pdf_report"];
+
+v13 [label="RARE_DISEASE_ENHANCED:CLINICAL_REPORT"];
+v15 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v13 -> v15;
+
+v15 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v16 [shape=point];
+v15 -> v16 [label="versions"];
+
+v3 [label="RARE_DISEASE_ENHANCED:RARE_DISEASE_PRIORITIZE"];
+v17 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v3 -> v17 [label="summary_stats"];
+
+v17 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v18 [shape=point];
+v17 -> v18;
+
+v3 [label="RARE_DISEASE_ENHANCED:RARE_DISEASE_PRIORITIZE"];
+v19 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v3 -> v19 [label="prioritized_variants"];
+
+v19 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v20 [shape=point];
+v19 -> v20;
+
+v21 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v22 [shape=point];
+v21 -> v22;
+
+v23 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v24 [shape=point];
+v23 -> v24;
+
+}

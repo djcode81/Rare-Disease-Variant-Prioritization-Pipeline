@@ -1,0 +1,6 @@
+##fileformat=VCFv4.2
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Consequence annotations from Ensembl VEP">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	230710048	rs699	A	G	.	PASS	CSQ=G|missense_variant|MODERATE|AGT|ENSG00000135744|Transcript|ENST00000366667|protein_coding|2/5||268|789|M268T||||||||0.001|||35.2|0.95|Pathogenic
+17	43044295	.	G	A	.	PASS	CSQ=A|stop_gained|HIGH|BRCA1|ENSG00000012048|Transcript|ENST00000471181|protein_coding|10/22||1687|5061|Q563*||||||||0.00001|||45.6|0.98|Pathogenic
+17	43045677	.	C	T	.	PASS	CSQ=T|missense_variant|MODERATE|BRCA1|ENSG00000012048|Transcript|ENST00000471181|protein_coding|11/22||1801|5403|R601C||||||||0.0005|||28.4|0.76|Likely_pathogenic
